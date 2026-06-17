@@ -205,7 +205,7 @@ textarea {
   display: grid;
   grid-template-columns: 1.06fr 0.94fr;
   align-items: center;
-  gap: 26px;
+  gap: 20px;
   padding-top: 20px;
 }
 
@@ -228,8 +228,8 @@ h3,
 
 h1 {
   margin: 0;
-  font-size: clamp(2.8rem, 6.6vw, 4.9rem);
-  max-width: 10ch;
+  font-size: clamp(2.6rem, 5.8vw, 4.35rem);
+  max-width: 11ch;
 }
 
 h1 span {
@@ -247,49 +247,24 @@ h1 span {
 }
 
 .lead {
-  max-width: 62ch;
+  max-width: 58ch;
   margin: 16px 0 0;
-  font-size: 1rem;
+  font-size: 0.98rem;
 }
 
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
-  margin-top: 22px;
-}
-
-.hero-metrics {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 12px;
-  margin: 22px 0 0;
-}
-
-.hero-metrics div {
-  padding: 16px;
-  border: 1px solid var(--line);
-  border-radius: var(--radius-md);
-  background: rgba(255, 255, 255, 0.66);
-}
-
-.hero-metrics dt {
-  font-size: 1.7rem;
-  font-weight: 800;
-  font-family: "Fraunces", Georgia, serif;
-}
-
-.hero-metrics dd {
-  margin: 4px 0 0;
-  color: var(--muted);
-  font-size: 0.9rem;
+  gap: 16px;
+  margin-top: 20px;
+  align-items: center;
 }
 
 .hero-visual {
   position: relative;
-  min-height: 560px;
+  min-height: 500px;
   border-radius: 40px;
-  padding: 20px;
+  padding: 18px;
   background:
     linear-gradient(180deg, rgba(53, 36, 28, 0.18), rgba(53, 36, 28, 0.36)),
     url("assets/hero-interior.png") center/cover no-repeat;
@@ -299,13 +274,13 @@ h1 span {
 
 .hero-wifi {
   position: absolute;
-  right: 24px;
-  top: 24px;
+  right: 18px;
+  top: 18px;
   z-index: 2;
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  padding: 10px 14px;
+  padding: 8px 12px;
   border-radius: 999px;
   background: rgba(255, 248, 241, 0.92);
   border: 1px solid rgba(73, 44, 28, 0.08);
@@ -324,7 +299,7 @@ h1 span {
 
 .hero-card {
   position: absolute;
-  padding: 22px;
+  padding: 20px;
   border-radius: 28px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   background: rgba(255, 250, 245, 0.94);
@@ -334,8 +309,8 @@ h1 span {
 }
 
 .card-large {
-  inset: 84px 44px auto 44px;
-  min-height: 250px;
+  inset: 82px 48px auto 48px;
+  min-height: 220px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -343,8 +318,8 @@ h1 span {
 }
 
 .card-large h2 {
-  margin: 14px 0 8px;
-  font-size: clamp(2rem, 4vw, 3.2rem);
+  margin: 12px 0 8px;
+  font-size: clamp(1.7rem, 3.2vw, 2.5rem);
 }
 
 .card-large p {
@@ -380,9 +355,20 @@ h1 span {
 }
 
 .price-row span:first-child {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-family: "Fraunces", Georgia, serif;
   color: var(--text);
+}
+
+.hero-link {
+  color: var(--accent-2);
+  font-weight: 800;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.hero-link:hover {
+  color: var(--accent);
 }
 
 .background-orb {
@@ -796,7 +782,7 @@ h1 span {
   }
 
   .hero-visual {
-    min-height: 560px;
+    min-height: 500px;
   }
 
   .menu-grid,
@@ -857,10 +843,9 @@ h1 span {
   }
 
   h1 {
-    font-size: clamp(2.8rem, 15vw, 4rem);
+    font-size: clamp(2.5rem, 13vw, 3.55rem);
   }
 
-  .hero-metrics,
   .menu-grid,
   .location-grid {
     grid-template-columns: 1fr;
@@ -875,7 +860,7 @@ h1 span {
   }
 
   .hero-visual {
-    min-height: 500px;
+    min-height: 460px;
     padding: 16px;
   }
 
@@ -885,7 +870,7 @@ h1 span {
 
   .card-large {
     inset: auto;
-    min-height: 260px;
+    min-height: 220px;
   }
 
   .hero-wifi {
