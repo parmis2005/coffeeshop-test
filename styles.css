@@ -432,12 +432,25 @@ h1 span {
   margin-bottom: 22px;
 }
 
+.section-heading h2 {
+  max-width: none;
+}
+
 .section-heading h2,
 .story-copy h2,
 .feature-card h2,
 .contact-copy h2 {
   margin: 0 0 16px;
   font-size: clamp(2.1rem, 4.5vw, 3.5rem);
+}
+
+#menu .section-heading {
+  max-width: none;
+}
+
+#menu .section-heading h2 {
+  white-space: nowrap;
+  font-size: clamp(1.8rem, 3vw, 2.8rem);
 }
 
 .gallery-title {
