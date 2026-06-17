@@ -297,6 +297,31 @@ h1 span {
   overflow: hidden;
 }
 
+.hero-wifi {
+  position: absolute;
+  right: 24px;
+  top: 24px;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: rgba(255, 248, 241, 0.92);
+  border: 1px solid rgba(73, 44, 28, 0.08);
+  box-shadow: 0 14px 30px rgba(18, 10, 6, 0.12);
+  color: var(--accent-2);
+  font-weight: 800;
+  letter-spacing: 0.01em;
+}
+
+.hero-wifi svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+  flex: none;
+}
+
 .hero-card {
   position: absolute;
   padding: 22px;
@@ -358,32 +383,6 @@ h1 span {
   font-size: 1.5rem;
   font-family: "Fraunces", Georgia, serif;
   color: var(--text);
-}
-
-.card-small {
-  width: min(260px, 78%);
-  backdrop-filter: blur(16px);
-}
-
-.card-small strong {
-  display: block;
-  margin: 10px 0 8px;
-  font-size: 1.05rem;
-}
-
-.card-small small {
-  color: var(--muted);
-  line-height: 1.5;
-}
-
-.top-left {
-  top: 18px;
-  left: 18px;
-}
-
-.bottom-right {
-  right: 18px;
-  bottom: 20px;
 }
 
 .background-orb {
@@ -889,18 +888,9 @@ h1 span {
     min-height: 260px;
   }
 
-  .card-small {
-    width: 100%;
-  }
-
-  .top-left,
-  .bottom-right {
-    left: auto;
-    right: auto;
-    top: auto;
-    bottom: auto;
-    width: 100%;
-    margin-top: 14px;
+  .hero-wifi {
+    top: 16px;
+    right: 16px;
   }
 
   .background-orb {
