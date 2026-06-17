@@ -475,7 +475,7 @@ h1 span {
 
 .gallery-wide {
   grid-column: span 3;
-  min-height: 330px;
+  min-height: 260px;
 }
 
 .gallery-card img,
