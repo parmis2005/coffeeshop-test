@@ -576,7 +576,7 @@ h1 span {
 }
 
 .menu-card:nth-child(4) .menu-media img {
-  object-position: 78% 72%;
+  object-position: center center;
 }
 
 .menu-card h3,
