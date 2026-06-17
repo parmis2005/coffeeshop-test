@@ -205,7 +205,7 @@ textarea {
   display: grid;
   grid-template-columns: 1.06fr 0.94fr;
   align-items: center;
-  gap: 34px;
+  gap: 26px;
   padding-top: 20px;
 }
 
@@ -228,7 +228,7 @@ h3,
 
 h1 {
   margin: 0;
-  font-size: clamp(3.2rem, 8vw, 5.8rem);
+  font-size: clamp(2.8rem, 6.6vw, 4.9rem);
   max-width: 10ch;
 }
 
@@ -248,21 +248,22 @@ h1 span {
 
 .lead {
   max-width: 62ch;
-  margin: 20px 0 0;
+  margin: 16px 0 0;
+  font-size: 1rem;
 }
 
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
-  margin-top: 28px;
+  margin-top: 22px;
 }
 
 .hero-metrics {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 14px;
-  margin: 30px 0 0;
+  gap: 12px;
+  margin: 22px 0 0;
 }
 
 .hero-metrics div {
@@ -286,9 +287,9 @@ h1 span {
 
 .hero-visual {
   position: relative;
-  min-height: 660px;
+  min-height: 560px;
   border-radius: 40px;
-  padding: 24px;
+  padding: 20px;
   background:
     radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.35), transparent 30%),
     linear-gradient(160deg, #3c2215 0%, #6b3b23 40%, #b46d46 100%);
@@ -308,8 +309,8 @@ h1 span {
 }
 
 .card-large {
-  inset: 104px 52px auto 52px;
-  min-height: 300px;
+  inset: 84px 44px auto 44px;
+  min-height: 250px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -374,13 +375,13 @@ h1 span {
 }
 
 .top-left {
-  top: 24px;
-  left: 24px;
+  top: 18px;
+  left: 18px;
 }
 
 .bottom-right {
-  right: 24px;
-  bottom: 28px;
+  right: 18px;
+  bottom: 20px;
 }
 
 .background-orb {
@@ -391,16 +392,16 @@ h1 span {
 }
 
 .orb-one {
-  width: 180px;
-  height: 180px;
+  width: 150px;
+  height: 150px;
   background: rgba(255, 222, 189, 0.2);
-  top: 32px;
-  right: 20px;
+  top: 28px;
+  right: 16px;
 }
 
 .orb-two {
-  width: 260px;
-  height: 260px;
+  width: 220px;
+  height: 220px;
   background: rgba(255, 255, 255, 0.08);
   left: -30px;
   bottom: -50px;
@@ -456,6 +457,83 @@ h1 span {
   gap: 18px;
 }
 
+.gallery-section {
+  padding-top: 18px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.gallery-card {
+  position: relative;
+  margin: 0;
+  min-height: 220px;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.gallery-wide {
+  grid-column: span 3;
+  min-height: 330px;
+}
+
+.gallery-card img,
+.menu-media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery-card img {
+  transform: scale(1.01);
+}
+
+.gallery-card:nth-child(1) img {
+  object-position: 50% 45%;
+}
+
+.gallery-card:nth-child(2) img {
+  object-position: 12% 12%;
+}
+
+.gallery-card:nth-child(3) img {
+  object-position: 50% 12%;
+}
+
+.gallery-card:nth-child(4) img {
+  object-position: 85% 12%;
+}
+
+.gallery-card:nth-child(5) img {
+  object-position: 18% 78%;
+}
+
+.gallery-card:nth-child(6) img {
+  object-position: 52% 78%;
+}
+
+.gallery-card:nth-child(7) img {
+  object-position: 86% 78%;
+}
+
+.gallery-card figcaption {
+  position: absolute;
+  left: 18px;
+  bottom: 16px;
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: rgba(255, 248, 241, 0.84);
+  color: var(--text);
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  backdrop-filter: blur(10px);
+}
+
 .menu-card,
 .location-card,
 .quote-card,
@@ -470,8 +548,38 @@ h1 span {
 }
 
 .menu-card {
+  display: flex;
+  flex-direction: column;
   padding: 22px;
-  min-height: 240px;
+  min-height: 320px;
+  overflow: hidden;
+}
+
+.menu-media {
+  margin: -22px -22px 18px;
+  height: 170px;
+  overflow: hidden;
+  background: linear-gradient(135deg, rgba(143, 78, 43, 0.08), rgba(47, 107, 85, 0.08));
+}
+
+.menu-media img {
+  object-position: center center;
+}
+
+.menu-card:nth-child(1) .menu-media img {
+  object-position: 30% 28%;
+}
+
+.menu-card:nth-child(2) .menu-media img {
+  object-position: 54% 20%;
+}
+
+.menu-card:nth-child(3) .menu-media img {
+  object-position: 22% 80%;
+}
+
+.menu-card:nth-child(4) .menu-media img {
+  object-position: 78% 72%;
 }
 
 .menu-card h3,
@@ -705,6 +813,14 @@ h1 span {
   .location-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .gallery-wide {
+    grid-column: span 2;
+  }
 }
 
 @media (max-width: 760px) {
@@ -760,6 +876,14 @@ h1 span {
     grid-template-columns: 1fr;
   }
 
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-wide {
+    grid-column: auto;
+  }
+
   .hero-visual {
     min-height: 500px;
     padding: 16px;
@@ -795,5 +919,9 @@ h1 span {
   .site-footer {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .menu-media {
+    height: 180px;
   }
 }
