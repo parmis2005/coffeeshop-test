@@ -19,7 +19,7 @@ export default function Hero() {
     <section
       ref={sectionRef}
       id="top"
-      className="relative mx-auto grid max-w-6xl gap-14 px-4 pb-20 pt-36 sm:px-6 lg:grid-cols-[1.15fr_0.85fr] lg:items-center lg:pt-44"
+      className="relative mx-auto grid max-w-7xl gap-10 px-4 pb-20 pt-36 sm:px-6 lg:grid-cols-[1fr_1.05fr] lg:items-center lg:pt-44"
     >
       <div>
         <motion.p
@@ -85,15 +85,15 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0.96 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8 }}
-          className="relative aspect-[4/5] overflow-hidden rounded-[32px] shadow-[0_18px_60px_rgba(36,24,16,0.12)]"
+          className="relative aspect-[4/3] overflow-hidden rounded-[32px] shadow-[0_18px_60px_rgba(36,24,16,0.12)]"
         >
           <motion.div style={{ scale: imageScale }} className="absolute inset-0">
             <Image
-              src="/images/hero-interior.png"
-              alt="Warmes Interior eines modernen Specialty-Coffee-Shops"
+              src="/images/cafe-fleur-interior.jpg"
+              alt="Gemütliches Café-Interieur mit warmem Licht, Pflanzen und Holzmöbeln"
               fill
               priority
-              sizes="(max-width: 1024px) 90vw, 520px"
+              sizes="(max-width: 1024px) 90vw, 620px"
               className="object-cover"
             />
           </motion.div>
@@ -113,16 +113,16 @@ export default function Hero() {
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.65, duration: 0.6 }}
-          className="absolute -bottom-8 right-4 w-64 rounded-3xl border border-line bg-[#fffaf6] p-5 shadow-[0_18px_60px_rgba(36,24,16,0.18)] sm:right-8"
+          className="absolute -bottom-6 right-4 w-48 rounded-2xl border border-line bg-[#fffaf6] p-3.5 shadow-[0_18px_60px_rgba(36,24,16,0.18)] sm:right-8"
         >
-          <span className="inline-block rounded-full bg-accent/10 px-3 py-1 text-[0.65rem] font-bold uppercase tracking-wide text-accent">
+          <span className="inline-block rounded-full bg-accent/10 px-2 py-0.5 text-[0.55rem] font-bold uppercase tracking-wide text-accent">
             Heute empfohlen
           </span>
-          <h2 className="mt-2 font-display text-xl text-text">Cherry Cloud Latte</h2>
-          <p className="mt-1 text-xs text-muted">Espresso, Kirschsirup, Hafermilch und cremiger Cold Foam.</p>
-          <div className="mt-3 flex items-center justify-between text-sm">
+          <h2 className="mt-1.5 font-display text-base text-text">Cherry Cloud Latte</h2>
+          <p className="mt-1 text-[0.65rem] leading-snug text-muted">Espresso, Kirschsirup, Hafermilch und cremiger Cold Foam.</p>
+          <div className="mt-2 flex items-center justify-between text-xs">
             <strong className="text-accent">4,90 €</strong>
-            <span className="text-xs text-muted">mit Hafermilch inklusive</span>
+            <span className="text-[0.65rem] text-muted">mit Hafermilch inklusive</span>
           </div>
         </motion.div>
 

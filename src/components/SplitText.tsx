@@ -38,7 +38,7 @@ export default function SplitText({ text, className, delay = 0, once = true }: P
       viewport={{ once, amount: 0.3 }}
     >
       {words.map((w, i) => (
-        <span key={i} className="inline-block overflow-hidden align-bottom pt-[0.14em] -mt-[0.14em]">
+        <span key={i} className="inline-block overflow-hidden pb-[0.14em] align-bottom pt-[0.14em] -mt-[0.14em]">
           <motion.span className="inline-block" variants={word}>
             {w}
           </motion.span>
