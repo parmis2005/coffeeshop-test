@@ -6,12 +6,12 @@ import { Coffee, CupSoda, Croissant, Salad, Sandwich, Wine } from "lucide-react"
 import Reveal from "./Reveal";
 
 const CATEGORIES = [
-  { icon: Coffee, label: "Espresso", sub: "Kräftig & samtig", image: "/images/menu-espresso.png" },
-  { icon: CupSoda, label: "Cold Brew", sub: "Sommerlich kalt", image: "/images/menu-cold-brew.png" },
-  { icon: Sandwich, label: "Bagels", sub: "Herzhaft belegt", image: "/images/bagels.png" },
-  { icon: Croissant, label: "Sweets", sub: "Süße Auszeit", image: "/images/sweets.png" },
-  { icon: Salad, label: "Breakfast", sub: "Frisch & bunt", image: "/images/breakfast-bowl.png" },
-  { icon: Wine, label: "Cocktails", sub: "Für den Abend", image: "/images/cocktails.png" },
+  { icon: Coffee, label: "Espresso", sub: "Kräftig & samtig", image: "/images/menu-espresso.jpg" },
+  { icon: CupSoda, label: "Cold Brew", sub: "Sommerlich kalt", image: "/images/menu-cold-brew.jpg" },
+  { icon: Sandwich, label: "Bagels", sub: "Herzhaft belegt", image: "/images/bagels.jpg" },
+  { icon: Croissant, label: "Sweets", sub: "Süße Auszeit", image: "/images/sweets.jpg" },
+  { icon: Salad, label: "Breakfast", sub: "Frisch & bunt", image: "/images/breakfast-bowl.jpg" },
+  { icon: Wine, label: "Cocktails", sub: "Für den Abend", image: "/images/cocktails.jpg" },
 ];
 
 export default function Categories() {

@@ -3,13 +3,13 @@ import { Play } from "lucide-react";
 import Reveal from "./Reveal";
 
 const ITEMS = [
-  { type: "image", src: "/images/hero-interior.png", alt: "Warmes Interior eines modernen Specialty-Coffee-Shops", caption: "Coffee Shop Atmosphere", wide: true },
-  { type: "image", src: "/images/drinks.png", alt: "Cappuccino und Cold Brew im warmen Licht", caption: "Signature Drinks" },
-  { type: "image", src: "/images/cafe-interior.png", alt: "Stilvoller Coffee-Shop-Tisch mit Cappuccino und Pflanzen", caption: "Coffee Moments" },
-  { type: "image", src: "/images/bagels.png", alt: "Artisan Bagel Sandwich und Croissant auf einem Keramikteller", caption: "Bagels & Snacks" },
-  { type: "image", src: "/images/sweets.png", alt: "Matcha Cake und Iced Matcha Latte in ästhetischer Präsentation", caption: "Sweet Treats" },
-  { type: "image", src: "/images/cocktails.png", alt: "Warmes Coffee-und-Cocktail-Stillleben", caption: "Cocktails" },
-  { type: "image", src: "/images/breakfast-bowl.png", alt: "Frühstücksbowl mit Früchten, Granola und Kaffee", caption: "Breakfast Bowls" },
+  { type: "image", src: "/images/hero-interior.jpg", alt: "Warmes Interior eines modernen Specialty-Coffee-Shops", caption: "Coffee Shop Atmosphere", wide: true },
+  { type: "image", src: "/images/drinks.jpg", alt: "Cappuccino und Cold Brew im warmen Licht", caption: "Signature Drinks" },
+  { type: "image", src: "/images/cafe-interior.jpg", alt: "Stilvoller Coffee-Shop-Tisch mit Cappuccino und Pflanzen", caption: "Coffee Moments" },
+  { type: "image", src: "/images/bagels.jpg", alt: "Artisan Bagel Sandwich und Croissant auf einem Keramikteller", caption: "Bagels & Snacks" },
+  { type: "image", src: "/images/sweets.jpg", alt: "Matcha Cake und Iced Matcha Latte in ästhetischer Präsentation", caption: "Sweet Treats" },
+  { type: "image", src: "/images/cocktails.jpg", alt: "Warmes Coffee-und-Cocktail-Stillleben", caption: "Cocktails" },
+  { type: "image", src: "/images/breakfast-bowl.jpg", alt: "Frühstücksbowl mit Früchten, Granola und Kaffee", caption: "Breakfast Bowls" },
   { type: "video", src: "/videos/croissant-bowl.mp4", poster: "/images/croissant-bowl-poster.jpg", caption: "Frisch aus dem Ofen" },
 ] as const;
 
